@@ -1,7 +1,7 @@
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 /**
- * @author Elif PulukÁu
+ * @author Elif Puluk√ßu
  * November 16th, 2019
  * @param <Item>
  * Program Explanation: myStack is a generic class which creates a stack and checks its some properties.
@@ -17,7 +17,6 @@ public class myStack<Item> implements Iterable<Item> {
 		a = (Item[]) new Object[2];
 		n = 0;
 	}
-
 	/**
 	 *
 	 * @return
@@ -25,7 +24,7 @@ public class myStack<Item> implements Iterable<Item> {
 	 * On the other hand, method returns false if the stack has at least one element.
 	 */
 	public boolean isEmpty() { return n == 0; }
-
+	
 	/**
 	 * 
 	 * @return 
@@ -90,7 +89,7 @@ public class myStack<Item> implements Iterable<Item> {
 	 */
 	public Item peek() {
 		if (isEmpty())
-			throw new NoSuchElementException("Stack underflow"); //if you pop when the stack is empty, you get a ìstack underflowî error
+			throw new NoSuchElementException("Stack underflow"); //if you pop when the stack is empty, you get a ‚Äústack underflow‚Äù error
 		return a[n - 1];
 	}
 
